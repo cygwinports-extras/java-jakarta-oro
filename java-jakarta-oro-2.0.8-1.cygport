@@ -1,0 +1,11 @@
+inherit ant
+
+DESCRIPTION="Java regular expressions library"
+HOMEPAGE="http://jakarta.apache.org/oro/"
+SRC_URI="mirror://apache/${ORIG_PN//-//}/source/${ORIG_PN}-${PV}.tar.gz"
+
+DIFF_EXCLUDES="docs"
+
+ANT_BUILD_TARGETS="jar javadocs"
+ANT_INSTALL_JARS="*.jar"
+ANT_INSTALL_JAVADOC="docs/api"
